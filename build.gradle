@@ -1,0 +1,23 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.5'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '1'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.corundumstudio.socketio:netty-socketio:1.7.7'
+    implementation 'org.slf4j:slf4j-simple:1.7.7'
+
+}
+
+test {
+    useJUnitPlatform()
+}
