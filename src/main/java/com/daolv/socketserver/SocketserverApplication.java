@@ -10,7 +10,7 @@ public class SocketserverApplication {
 
         Configuration config = new Configuration();
         config.setHostname("127.0.0.1");
-        config.setPort(9092);
+        config.setPort(80);
         config.setTransports(Transport.POLLING, Transport.WEBSOCKET);
         config.setOrigin(":*:");
 //        config.setOrigin("*");
